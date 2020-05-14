@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.min.css">
+</head>
+<body>
+    <header id="header_tut">
+        <a href="#" class="logo">III-CONSULT</a>
+        <ul>
+            <li><a href="III-C.html" title="Homepage" target="" onclick="toggle()">Home</a></li>
+            <li><a href="fxinst.html" title="FX institute" target="_blank" onclick="toggle()">FX Institute</a></li>
+            <li><a href="fhub.html" title="Fashion hub" target="_blank"  onclick="toggle()">Fashion hub</a></li>
+            <li><a href="tutorials.html" title="Tutorials" target="" class="active"  onclick="toggle()">Tutorials</a></li>
+            <li><a href="intomarket.html" title="buy or sell with us" target="_blank"  onclick="toggle()">Our Market</a></li>
+            <li><a href="consult.html" title="Consultation" target="_blank"  onclick="toggle()">Consultation</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Tutorials</h3>
+               
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY  > 0)
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
